@@ -1,9 +1,16 @@
 
+// Pattern Matching is very powerful
+// It let's you match against types, "shapes", values and
+// also has a mechanism to allow the programmer to create novel matching expressions.
+// It let's you bind parts of the matched expression to local names, this is called
+// extraction or deconstruction.
+//
 
-val uno = 1
-val lista = List(1,2,3)
-val array = Array("a", "b")
-val array3 = Array("a", "b", "c")
+// Let's create some bindings and look at some data types while we are at it.
+val uno     = 1
+val lista   = List(1,2,3)
+val array   = Array("a", "b")
+val array3  = Array("a", "b", "c")
 val string  = "Stringy!"
 val string2 = "2"
 val tupla2  = (1, "a")
@@ -14,7 +21,7 @@ def doMatch(x: Any): Unit = x match {
   case l @ List(a,b,c)  => println("Lista de TRES elementos")
   case l @ List(a,b)    => println("Lista de dos elementos ")
   case "Stringy!"       => println("Stringy thingy")
-  case Array(a, b )   => println( s"Array con $a, $b")
+  case Array(a, b )     => println( s"Array con $a, $b")
   case Array(a, b, c)   => println( s"Array con $a, $b, $c")
   case s: String        => println( s"Otro String$s")
   case (int, str)       => println( s"Tupla2 $int, $str")

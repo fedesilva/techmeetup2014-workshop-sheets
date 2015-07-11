@@ -2,10 +2,10 @@
 
 val l = List(1, 2, 3)
 
-// Transformar
+// Tranform
 val l2 = l.map( i => i*2 )
 
-// Otra forma _ indica parámetro posicionalmente
+// A shorter way to express a function literal.
 val l3 = l.map( _*2 )
 
 val raven =

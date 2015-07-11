@@ -1,6 +1,8 @@
 Scala Workshop - Tech Meetup 2014
 ==============================
 
-Este repositorio contiene IntelliJ worksheets interesantes, que sirven de introducción a los conceptos principales de Scala.
+This repository contains scripts to explore scala features.
+
+The repository has a build.sbt file which will be used to be able to run the sheets and use them in an IDE.
 
 
